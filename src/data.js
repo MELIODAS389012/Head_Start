@@ -39,7 +39,7 @@ const generateHistoryData = (isCritical) => {
     const time = new Date();
     time.setHours(time.getHours() - i);
     data.push({
-      time: time.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' }),
+      time: time.toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit' }),
       heartRate: isCritical ? Math.floor(Math.random() * 30) + 140 : Math.floor(Math.random() * 30) + 60,
       stress: isCritical ? Math.floor(Math.random() * 20) + 70 : Math.floor(Math.random() * 30) + 20,
       activity: isCritical ? Math.floor(Math.random() * 20) + 70 : Math.floor(Math.random() * 30) + 30,
