@@ -1,16 +1,48 @@
-# React + Vite
+# 🌍 Head-Start: AI Disaster Warning System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered disaster warning platform that analyzes animal behavior patterns to provide early warnings for natural disasters.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🔬 Scientist Dashboard
+- Monitor 10 animals with real-time vitals (heart rate, stress, activity)
+- Interactive map showing animal locations using Leaflet
+- AI alert system triggers when 70%+ animals show critical status
+- Validation panel with data quality metrics and AI model performance
 
-## React Compiler
+### 👥 Citizen App
+- Home page with platform overview and emergency alerts
+- Survival guides for earthquake, tsunami, and flood scenarios
+- Interactive safety quiz with scoring and progress tracking
+- News feed with latest disaster alerts and safety information
+- Emergency map showing nearby shelters and hospitals
+- Real-time alert notifications
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- **React** + **Vite** - Modern development setup
+- **React Router** - Client-side routing
+- **Tailwind CSS** - Responsive styling
+- **Leaflet** - Interactive maps
+- **Recharts** - Data visualization
+- Simulated data for demonstration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## How It Works
+
+1. **Animal Monitoring**: IoT sensors track animal behavior patterns
+2. **AI Analysis**: Machine learning detects anomalies in behavior
+3. **Early Warning**: Alerts sent before disasters strike
+4. **Stay Safe**: Access guides, maps, and emergency resources

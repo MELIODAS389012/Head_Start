@@ -48,13 +48,19 @@ const generateHistoryData = (isCritical) => {
   return data;
 };
 
-// News feed data
+// News feed data - using dynamic dates
+const today = new Date();
+const yesterday = new Date(today);
+yesterday.setDate(yesterday.getDate() - 1);
+const twoDaysAgo = new Date(today);
+twoDaysAgo.setDate(twoDaysAgo.getDate() - 2);
+
 export const newsData = [
   {
     id: 1,
     title: 'Earthquake Alert System Saves Lives in California',
     content: 'Early warning system detected unusual animal behavior 2 hours before magnitude 6.5 earthquake.',
-    date: '2026-01-15',
+    date: today.toISOString().split('T')[0],
     category: 'Earthquake',
     image: 'https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=400',
   },
@@ -62,7 +68,7 @@ export const newsData = [
     id: 2,
     title: 'New AI Algorithm Improves Tsunami Prediction',
     content: 'Machine learning model analyzes marine animal behavior to predict tsunami events with 95% accuracy.',
-    date: '2026-01-14',
+    date: yesterday.toISOString().split('T')[0],
     category: 'Tsunami',
     image: 'https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=400',
   },
@@ -70,7 +76,7 @@ export const newsData = [
     id: 3,
     title: 'Flood Prevention Through Animal Monitoring',
     content: 'Monitoring bird migration patterns helps authorities prepare for seasonal floods.',
-    date: '2026-01-13',
+    date: twoDaysAgo.toISOString().split('T')[0],
     category: 'Flood',
     image: 'https://images.unsplash.com/photo-1547640884-5f6e0e5b0f4c?w=400',
   },
